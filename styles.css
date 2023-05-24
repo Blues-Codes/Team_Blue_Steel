@@ -1,0 +1,41 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* background color */
+body {
+    background-color: white;
+}
+
+/* container */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*temp height*/
+}
+
+/* square details */
+.square {
+    width: 350px;
+    height: 350px;
+    background-color: #fa0707; /* color can be changed */
+    margin: 10px; /* spacing between squares */
+}
+
+/* footer details */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white; 
+}
+@media only screen and (max-width: 600px) {
+    #container {
+      flex-direction: column;
+    }
+    .square {
+      margin-bottom: 20px;
+    }
+  }
